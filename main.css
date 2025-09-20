@@ -72,9 +72,10 @@ header {
 /* ===== LAYOUT VARIATIONS ===== */
 
 /* ----- Default Screen ----- */
-.page,
+.page {
+  flex-direction: column;
+}
 .content {
-  display: flex;
   flex-direction: column;
 }
 .sidebar {
@@ -84,59 +85,21 @@ header {
 
 /* ----- Phase 1 - Moderate Screen ----- */
 
-/* Your code here */
-@media (min-width: 820px) {
-  .page {
-    display: flex;
-    flex-direction: row;
-  }
+@media screen and (min-width: 851px) and (max-width: 1219px) {
   .content {
-    display: flex;
     flex-direction: row;
-  }
-  .story-box {
-    padding: 0 3rem;
   }
 }
 
 /* ----- Phase 1 - Wide Screen ----- */
 
 /* Your code here */
-@media (min-width: 1220px) {
+@media screen and (min-width: 1220px) {
   .page {
     flex-direction: row;
   }
   .content {
     flex-direction: row;
-  }
-  .story-box {
-    padding: 0 4rem;
-  }
-  .ffe {
-    width: 96px;
-    height: 96px;
-    font-size: 16px;
-  }
-}
-
-/* ----- Extremely Wide Screen ----- */
-
-/* Your code here */
-@media (min-width: 1700px) {
-  .page {
-    flex-direction: row;
-  }
-  .content {
-    flex-direction: row;
-  }
-
-  .story-box {
-    padding: 0 6rem;
-  }
-  .ffe {
-    width: 120px;
-    height: 120px;
-    font-size: 20px;
   }
 }
 
